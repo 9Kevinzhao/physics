@@ -6,7 +6,7 @@ exports.distance = function(v,t){
 };
 
 exports.distance = function(a,t){
-    return (a^2*t)/2;
+    return (a*t^2)/2;
 }
 exports.velocity = function(d,t){
     return d/t;
