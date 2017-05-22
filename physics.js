@@ -34,13 +34,23 @@ terminal.question("What type of equation are you looking for?",function(str){
                 }
 
                 if(str1=="d"){
+                    if(!Number.isNaN(strcma[2])){
                     console.log(motion.distance(strcma[2],strcma[1],strcma[3]))
+                }
+                else{
+                    console.log(motion.distance2(strcma[1],strcma[3]))
+                }
                 }
                 if(str1=="t"){
                     console.log(motion.time(strcma[0],strcma[1]))
                 }
                 if(str1=="v"){
+                    if(!Number.isNaN(strcma[0])){
                     console.log(motion.velocity(strcma[0],strcma[3]))
+                }
+                else{
+                    console.log(motion.velocity2(strcma[2],strcma[3]))
+                }
                 }
 
             });
